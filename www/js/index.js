@@ -8,7 +8,7 @@ function traerLista(){
        if(req.status==200 && req.readyState==4){
             var respuesta = JSON.parse(req.responseText);
             console.log(respuesta);
-            crearLista(respuesta);
+            crearLista(respuesta.response);
        }
     };
     req.send(null);
