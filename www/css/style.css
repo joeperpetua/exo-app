@@ -1,0 +1,22 @@
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      } 
+       .pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+   
+    margin: 50px auto;}
+
+    footer{
+      background-color: #093556;
+    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
