@@ -15,6 +15,10 @@
   margin-top: 15%;
 }
 
+.margin{
+  margin-top: 18%;
+}
+
 li{
   width: fit-content;
 }
@@ -28,6 +32,82 @@ footer{
   background-color: #093556;
 }
 
+.btn{
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+summary, .mainSum{
+  width: fit-content;
+}
+
+.mainSub{
+  margin: 0 auto;
+  padding: 3vh;
+  font-weight: 600;
+  color: black;
+  transition: 0.25s ease;
+}
+
+summary::-webkit-details-marker{
+  display: none;
+}
+
+.mainDetails{
+  background-color: #afb4ba;
+  border-color: #afb4ba;
+  background-color: #afb4ba;
+  border-color: #afb4ba;
+  height: 10vh;
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  transition: height 1s ease;
+  border-radius: 5px;
+}
+
+.mainDetails[open]{
+  height: 214vh;
+}
+
+.mainDetails[open] .mainSub{
+  color: #afb4ba;
+}
+
+.tit{
+  font-size: large;
+  font-weight: 600;
+  padding: 0 2vh;
+}
+
+.list{
+  padding: 0 0 2.5vh 6.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
 
   .bd-placeholder-img-lg {
@@ -35,4 +115,8 @@ footer{
   }
 
 }
+
+
+
+
 

@@ -1,3 +1,5 @@
+
+
 var req = new XMLHttpRequest();
 var url = 'http://localhost/e-commerce/api/producto.php';
 req.open("GET",url,true);
@@ -14,7 +16,7 @@ function traerLista(){
     req.send(null);
 }
 
-var id;
+
 
 function crearLista(resp){
     
@@ -36,7 +38,6 @@ function crearLista(resp){
                             +'<li>Bateria: '+ elemento.battery_capacity +'mAh</li>'
                             +'<li>Categoria: '+ elemento.cat +'</li>'
                         +'</ul>'
-                        +'<button type="button" class="btn btn-lg btn-block btn-primary comprar" value="' + id + '">Comprar</button>'
                         +'<button type="button" class="btn btn-lg btn-block btn-primary verMas" value="' + id + '">Ver más</button>'
                     +'</div>'
                 +'</div>';
@@ -72,13 +73,11 @@ function enlazarBotones(){
         let boton = event.target;
 
         if (boton.classList.contains("comprar")){
-            localStorage.setItem("id", boton.value);
-            window.open('http://localhost:3000/pago.html', "_self");
+            window.open('http://localhost:3000/pago.html?id_product='+boton.value, "_self");
         }
 
-        if (boton.classList.contains("verMas")){
-            localStorage.setItem("id", boton.value);
-            window.open('http://localhost:3000/item.html', "_self");
+        if (boton.classList.contains("verMas")){ 
+            window.open('http://localhost:3000/item.html?id_product='+boton.value, "_self");
         }
 
     }, false);

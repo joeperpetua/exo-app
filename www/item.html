@@ -4,7 +4,8 @@
 	<title>exoPhone</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
@@ -23,26 +24,24 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="producto.html">Productos</a>
-            </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
         </div>
-      </nav>
+    </nav>
 
-
-
+<div class="container">
+  <div class="card-deck mb-3 text-center" id="item">
+  </div>
 
 <footer class="footer mt-auto py-3">
   <div class="container">
     <span class="text-muted">exoPhone</span>
   </div>
 </footer>
-
+</div>
 <script src="js/index.js"></script>
 <script src="js/item.js"></script>
 </body>

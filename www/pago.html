@@ -5,7 +5,7 @@
     <title>exoPhone</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
   </head>
@@ -37,26 +37,28 @@
 </nav>
 
 <div class="container">
-  <div class="py-5 text-center">
+  <div class="py-5 text-center title">
     <h2>Formulario de Pago</h2>
     <p class="lead">Orden de Compra</p>
   </div>
 
+  <div id="resumen"></div>
+
   <div class="row">
-    <div class="col-md-8 order-md-1" style="margin-left: 16%;">
-      <h4 class="mb-3">Billing address</h4>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Datos del comprador</h4>
       <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Primer nombre</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
             <div class="invalid-feedback">
               Se requiere un nombre válido.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName">Apellido</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required>
             <div class="invalid-feedback">
               Se requiere apellido válido.
             </div>
@@ -64,20 +66,20 @@
         </div>
 
         <div class="mb-3">
-          <label for="username">Username</label>
+          <label for="username">Telefono</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+              <span class="input-group-text">+54</span>
             </div>
-            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <input type="text" class="form-control" id="username" placeholder="Telefono" required>
             <div class="invalid-feedback" style="width: 100%;">
-              Your username is required.
+              Your phone number is required.
             </div>
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <label for="email">Email <span class="text-muted"></span></label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
@@ -97,5 +99,8 @@
 </footer>
 
 </div>
+
+<script src="js/pago.js"></script>
+
 </body>
 </html>
