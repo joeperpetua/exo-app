@@ -47,10 +47,10 @@ function crearLista(resp){
                                 +'<li>Datos del dispositivo</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Codigo de modelo: ' + elemento.disp_code + '</li>'
+                                +'<li>S.O: ' + elemento.disp_so + ' ' + elemento.disp_so_version + '</li>'
+                                +'<li>Color: ' + elemento.disp_color + '</li>'
+                                +'<li>Anio: ' + elemento.disp_year + '</li>'
                             +'</ul>'
 
                             
@@ -58,9 +58,9 @@ function crearLista(resp){
                                 +'<li>Unidades de procesamiento</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>CPU: ' + elemento.cpu_brand + ' ' + elemento.cpu_model + '</li>'
+                                +'<li>Nucleos: ' + elemento.cpu_cores + '</li>'
+                                +'<li>GPU: ' + elemento.gpu_brand + ' ' + elemento.gpu_model + '</li>'
                             +'</ul>'
 
                             
@@ -68,10 +68,10 @@ function crearLista(resp){
                                 +'<li>Pantalla</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Tamanio: ' + elemento.screen_size + '"</li>'
+                                +'<li>Resolucion: ' + elemento.screen_reso + '</li>'
+                                +'<li>Tipo: ' + elemento.screen_type + '</li>'
+                                +'<li>Relacion aspecto: ' + elemento.screen_aspect_ratio + '</li>'
                             +'</ul>'
 
                             
@@ -79,9 +79,9 @@ function crearLista(resp){
                                 +'<li>Memoria</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Ram: ' + elemento.ram_size + 'GB</li>'
+                                +'<li>Rom: ' + elemento.rom_size + 'GB</li>'
+                                +'<li>SD (max): ' + elemento.sd_size + 'GB</li>'
                             +'</ul>'
 
                             
@@ -89,10 +89,10 @@ function crearLista(resp){
                                 +'<li>Bateria</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Tipo: ' + elemento.battery_type + '</li>'
+                                +'<li>Capacidad: ' + elemento.battery_capacity + 'mAh</li>'
+                                +'<li>Carga rapida: ' + elemento.battery_qc + '</li>'
+                                +'<li>Carga inalambrica: ' + elemento.battery_wc + '</li>'
                             +'</ul>'
 
                             
@@ -100,11 +100,11 @@ function crearLista(resp){
                                 +'<li>Conectividad</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Tipo SIM: ' + elemento.sim_type + '</li>'
+                                +'<li>Tipo USB: ' + elemento.usb_type + '</li>'
+                                +'<li>NFC: ' + elemento.has_nfc + '</li>'
+                                +'<li>IRC: ' + elemento.has_irc + '</li>'
+                                +'<li>LTE: ' + elemento.has_lte + '</li>'
                             +'</ul>'
 
                             
@@ -120,10 +120,10 @@ function crearLista(resp){
                                 +'<li>Extras</li>'
                             +'</ul>'
                             +'<ul class="mt-3 mb-4 list">'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
-                                +'<li>' + elemento.a + '</li>'
+                                +'<li>Lector dactilar: ' + elemento.fingerprint_type + '</li>'
+                                +'<li>Audio: ' + elemento.speaker_type + '</li>'
+                                +'<li>Resistencia al agua: ' + elemento.water_resistant_grade + '</li>'
+                                +'<li>Jack 3.5mm: ' + elemento.has_headphone_jack + '</li>'
                             +'</ul>'
                         +'</details>'
                         
