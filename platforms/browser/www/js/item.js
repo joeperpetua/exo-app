@@ -124,7 +124,7 @@ function crearLista(resp){
                                 +'<li>Audio: ' + elemento.speaker_type + '</li>'
                                 +'<li>Resistencia al agua: ' + elemento.water_resistant_grade + '</li>'
                                 +'<li>Jack 3.5mm: ' + elemento.has_headphone_jack + '</li>'
-                            +'</ul>'
+                            +'</ul>' 
                         +'</details>'
                         
                         
