@@ -38,6 +38,11 @@ function crearLista(resp){
     
 }
 
+function compra(){
+    alert("Compra realizada");
+    window.open("index.html");
+}
+
 function menu() {
     var $button = document.getElementById('menuButton');
     var $state = document.getElementById('navbarCollapse').className;
