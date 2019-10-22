@@ -4,7 +4,7 @@ window.onload = function(){
 
 
 var req = new XMLHttpRequest();
-var url = 'http://localhost/e-commerce/api/producto.php'+window.location.search;
+var url = 'http://exophone.000webhostapp.com/api/producto.php'+window.location.search;
 
    
 req.open("GET",url,true);
@@ -22,7 +22,8 @@ function traerLista(){
 }
 
 function crearLista(resp){
-    
+    var disp;
+    var price;
     var lista = '';
     var $mostrar = document.getElementById('resumen');
     
@@ -31,11 +32,18 @@ function crearLista(resp){
         lista += '<img src="' + elemento.disp_pic + '" width="100px" alt="miniatura de '+ elemento.cpu_brand + ' ' + elemento.cpu_model +'" >' 
                         +'<h4>'+ elemento.disp_brand + ' ' + elemento.disp_model + '</h4>'
                    +'<h1>$'+ elemento.product_price +'</h1>'
-                    +'<input type="number" placeholder="cantidad">';
+                    +'<input type="number" class="form-control" placeholder="Cantidad">';
+        disp = elemento.disp_brand + ' ' + elemento.disp_model;
+        price = elemento.product_price;
     });
 
     $mostrar.innerHTML = lista; 
     
+}
+
+function processOrder(){
+    alert("Confirmar su compra?");
+    window.open("/index.html");
 }
 
 function menu() {

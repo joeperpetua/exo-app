@@ -5,7 +5,7 @@ window.onload = function(){
 
 
 var req = new XMLHttpRequest();
-var url = 'http://localhost/e-commerce/api/producto.php'+window.location.search;
+var url = 'http://exophone.000webhostapp.com/api/producto.php'+window.location.search;
 
    
 req.open("GET",url,true);
