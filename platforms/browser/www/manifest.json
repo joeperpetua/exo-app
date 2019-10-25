@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "helloworld",
-  "short_name": "helloworld",
+  "name": "exoPhone",
+  "short_name": "exoPhone",
   "version": "com.exhope.app",
   "description": "Aplicacion movil del sitio ecommerce exoPhone",
   "author": "PhoneGap Team",
