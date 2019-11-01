@@ -44,6 +44,7 @@ function crearLista(resp){
         order_cant.setAttribute('type', 'number');
         order_cant.setAttribute('min', '1');
         order_cant.setAttribute('value', '1');
+        order_cant.setAttribute('class', 'form-control inp');
         order_cant.setAttribute('id', 'order_cant');
         var cant = document.createTextNode(elemento.product_price);
         order_cant.appendChild(cant);
