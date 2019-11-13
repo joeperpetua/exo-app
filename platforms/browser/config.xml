@@ -4,8 +4,8 @@
     <description>
        Aplicacion movil del sitio ecommerce exoPhone
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="exophone.contact@gmail.com" href="http://exophone.rf.gd">
+        exoPhone
     </author>
     <content src="index.html" />
     <access origin="*" />

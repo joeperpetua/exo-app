@@ -11,6 +11,10 @@
   width: 40vh;
 }
 
+.butn-menu{
+  margin: 0;
+}
+
 .title{
   margin-top: 15%;
 }
@@ -36,10 +40,13 @@ footer{
   margin-bottom: 1.5rem;
 }
 
-.menu-btn{
-  margin: 0;
+.btn-menu{
+  margin-bottom: 0;
 }
 
+.inp{
+  width: 20%;
+}
 
 
 
@@ -54,6 +61,7 @@ summary, .mainSum{
   font-weight: 600;
   color: black;
   transition: 0.25s ease;
+  height: fit-content;
 }
 
 summary::-webkit-details-marker{
@@ -65,7 +73,7 @@ summary::-webkit-details-marker{
   border-color: #afb4ba;
   background-color: #afb4ba;
   border-color: #afb4ba;
-  height: 10vh;
+  height: 11vh;
   display: flex;
   font-size: large;
   flex-direction: column;
@@ -74,7 +82,7 @@ summary::-webkit-details-marker{
 }
 
 .mainDetails[open]{
-  height: 214vh;
+  height: fit-content;
 }
 
 .mainDetails[open] .mainSub{

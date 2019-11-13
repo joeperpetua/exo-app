@@ -28,12 +28,12 @@
         <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
         <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
-        <splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi-screen.png" />
-        <splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi-screen.png" />
-        <splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi-screen.png" />
-        <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi-screen.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />

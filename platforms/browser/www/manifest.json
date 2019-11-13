@@ -5,7 +5,7 @@
   "short_name": "exoPhone",
   "version": "com.exhope.app",
   "description": "Aplicacion movil del sitio ecommerce exoPhone",
-  "author": "PhoneGap Team",
+  "author": "exoPhone",
   "icons": [],
   "start_url": "index.html"
 }

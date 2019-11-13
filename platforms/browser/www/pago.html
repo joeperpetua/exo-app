@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="index.html">exoPhone</a>
       
-      <a class="btn menu-btn btn-primary" id="menuButton" onclick="menu()">
+      <a class="btn btn-menu btn-primary" id="menuButton" onclick="menu()">
           <span class="navbar-toggler-icon"></span>
       </a>
     
@@ -24,10 +24,10 @@
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
         </ul>
-         <form class="form-inline mt-2 mt-md-0">
+        <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form> 
+        </form>
       </div>
   </nav>
 
@@ -37,26 +37,25 @@
     <p class="lead">Orden de Compra</p>
   </div>
 
-  <div id="resumen"></div>
+  
 
   <div class="row">
     <div class="col-md-8 order-md-1">
       <h4 class="mb-3">Datos del comprador</h4>
-      <form class="needs-validation" novalidate>
+
+      <form id="formulario">
+
+        <div id="resumen"></div>
         <div class="row">
+
           <div class="col-md-6 mb-3">
             <label for="firstName">Primer nombre</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
-            <div class="invalid-feedback">
-              Se requiere un nombre válido.
-            </div>
+            <input type="text" class="form-control" id="order_name" placeholder="Nombre" value="" name="order_name" required> 
           </div>
+
           <div class="col-md-6 mb-3">
             <label for="lastName">Apellido</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required>
-            <div class="invalid-feedback">
-              Se requiere apellido válido.
-            </div>
+            <input type="text" class="form-control" id="order_surname" placeholder="Apellido" value="" name="order_surname" required>
           </div>
         </div>
 
@@ -66,23 +65,18 @@
             <div class="input-group-prepend">
               <span class="input-group-text">+54</span>
             </div>
-            <input type="text" class="form-control" id="username" placeholder="Telefono" required>
-            <div class="invalid-feedback" style="width: 100%;">
-              Your phone number is required.
-            </div>
+            <input type="text" class="form-control" id="order_tel" placeholder="Telefono" name="order_tel" required>
           </div>
         </div>
 
         <div class="mb-3">
           <label for="email">Email <span class="text-muted"></span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
+          <input type="email" class="form-control" id="order_mail" placeholder="you@example.com" name="order_mail">
         </div>
 
  <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" onclick="processOrder()">Generar orden de compra</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Generar orden de compra</button>
+        <p class="formMsg"></p>
       </form>
     </div>
   </div>
