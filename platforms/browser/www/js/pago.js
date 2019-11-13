@@ -127,7 +127,7 @@ let $formulario = document.querySelector('#formulario'),
                     let respuestaDelServidor = JSON.parse(request.responseText);
                     if (respuestaDelServidor.response === 'ok')
                     {
-                        $formMsg.innerText = 'El producto ha sido comprado';
+
                         $formulario.reset();
                     } else {
                         $formMsg.innerText = 'Verificar los datos ingresados ' + request.status + ' / ' + request.readyState + ' / ' + request.responseText;
@@ -137,6 +137,8 @@ let $formulario = document.querySelector('#formulario'),
         };
         // la función JSON.stringify() transforma una variable tipo object a un string con formato Json
         request.send(JSON.stringify(parametros));
+        alert("El producto fue comprado con éxito, verifique su correo email para ver el detalle de la compra.");
+        window.open("index.html", "_self");
     } else {
         alert('complete los datos faltantes');
     }

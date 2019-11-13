@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.exhope.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>exoPhone</name>
+<widget id="com.exo.phone" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>exoPhone APP</name>
     <description>
-       Aplicacion movil del sitio ecommerce exoPhone
+        Aplicacion movil del sitio ecommerce exophone.rf.gd
     </description>
     <author email="exophone.contact@gmail.com" href="http://exophone.rf.gd">
-        exoPhone
+        Perpetua, Joel - Sanchez, Rocio
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-minSdkVersion" value="19" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.4.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.4.3" />
@@ -28,6 +28,7 @@
         <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
         <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
+
         <splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" />
         <splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" />
         <splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" />

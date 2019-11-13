@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.exhope.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>exoPhone</name>
+<widget id="com.exo.phone" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>exoPhone APP</name>
     <description>
-       Aplicacion movil del sitio ecommerce exoPhone
+        Aplicacion movil del sitio ecommerce exophone.rf.gd
     </description>
     <author email="exophone.contact@gmail.com" href="http://exophone.rf.gd">
-        exoPhone
+        Perpetua, Joel - Sanchez, Rocio
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -16,5 +16,5 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-minSdkVersion" value="19" />
 </widget>

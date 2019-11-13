@@ -73,11 +73,11 @@ function enlazarBotones(){
         let boton = event.target;
 
         if (boton.classList.contains("comprar")){
-            window.open('http://localhost:3000/pago.html?id_product='+boton.value, "_self");
+            window.open('pago.html?id_product='+boton.value, "_self");
         }
 
         if (boton.classList.contains("verMas")){ 
-            window.open('http://localhost:3000/item.html?id_product='+boton.value, "_self");
+            window.open('item.html?id_product='+boton.value, "_self");
         }
 
     }, false);
