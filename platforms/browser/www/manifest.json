@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "exoPhone",
-  "short_name": "exoPhone",
-  "version": "com.exhope.app",
-  "description": "Aplicacion movil del sitio ecommerce exoPhone",
-  "author": "PhoneGap Team",
+  "name": "exoPhone APP",
+  "short_name": "exoPhone APP",
+  "version": "com.exo.phone",
+  "description": "Aplicacion movil del sitio ecommerce exophone.rf.gd",
+  "author": "Perpetua, Joel - Sanchez, Rocio",
   "icons": [],
   "start_url": "index.html"
 }

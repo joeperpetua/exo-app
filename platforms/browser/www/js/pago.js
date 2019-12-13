@@ -32,7 +32,8 @@ function traerLista(){
 var order_subtotal;
 
 function crearLista(resp){
-    
+    var disp;
+    var price;
     var lista = '';
     var $mostrar = document.getElementById('resumen');
     var order_cant;
@@ -44,6 +45,7 @@ function crearLista(resp){
         order_cant.setAttribute('type', 'number');
         order_cant.setAttribute('min', '1');
         order_cant.setAttribute('value', '1');
+        order_cant.setAttribute('class', 'form-control inp');
         order_cant.setAttribute('id', 'order_cant');
         var cant = document.createTextNode(elemento.product_price);
         order_cant.appendChild(cant);
@@ -58,7 +60,6 @@ function crearLista(resp){
     $mostrar.innerHTML = lista; 
     $mostrar.appendChild(order_cant);
 }
-
 
 
 function menu() {
@@ -126,7 +127,7 @@ let $formulario = document.querySelector('#formulario'),
                     let respuestaDelServidor = JSON.parse(request.responseText);
                     if (respuestaDelServidor.response === 'ok')
                     {
-                        $formMsg.innerText = 'El producto ha sido comprado';
+
                         $formulario.reset();
                     } else {
                         $formMsg.innerText = 'Verificar los datos ingresados ' + request.status + ' / ' + request.readyState + ' / ' + request.responseText;
@@ -136,6 +137,8 @@ let $formulario = document.querySelector('#formulario'),
         };
         // la función JSON.stringify() transforma una variable tipo object a un string con formato Json
         request.send(JSON.stringify(parametros));
+        alert("El producto fue comprado con éxito, verifique su correo email para ver el detalle de la compra.");
+        window.open("index.html", "_self");
     } else {
         alert('complete los datos faltantes');
     }

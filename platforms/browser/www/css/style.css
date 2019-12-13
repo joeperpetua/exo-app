@@ -34,12 +34,21 @@ li{
 
 footer{
   background-color: #093556;
+  overflow-wrap: break-word;
+  text-decoration: none;
 }
 
 .btn{
   margin-bottom: 1.5rem;
 }
 
+.btn-menu{
+  margin-bottom: 0;
+}
+
+.inp{
+  width: 20%;
+}
 
 
 
@@ -66,7 +75,7 @@ summary::-webkit-details-marker{
   border-color: #afb4ba;
   background-color: #afb4ba;
   border-color: #afb4ba;
-  height: 16vh;
+  height: 11vh;
   display: flex;
   font-size: large;
   flex-direction: column;
