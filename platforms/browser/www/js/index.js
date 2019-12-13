@@ -1,7 +1,7 @@
 
 
 var req = new XMLHttpRequest();
-var url = 'http://exophone.000webhostapp.com/api/producto.php';
+var url = 'http://exoapi.000webhostapp.com/api/producto.php';
 req.open("GET",url,true);
 
 
